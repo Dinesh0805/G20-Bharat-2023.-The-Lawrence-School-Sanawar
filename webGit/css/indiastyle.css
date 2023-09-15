@@ -1,0 +1,132 @@
+* {
+    margin-top: -0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(237, 189, 101), rgb(91, 231, 91));
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.navbar {
+    position: fixed;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-width: 0.01px;
+    margin-bottom: 100px;
+}
+
+.leftnavbar {
+    position: fixed;
+    height: 68px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ml {
+    padding: 12px;
+    line-height: 40px;
+}
+
+.icons {
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-top-style: hidden;
+    border-bottom-style: hidden;
+    border-width: thin;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    border-image: linear-gradient(rgba(91, 231, 91, 0), rgb(255, 255, 255), rgba(91, 231, 91, 0)) 1;
+}
+
+.icons:hover {
+    border-right-style: solid;
+    border-left-style: solid;
+}
+
+.heading {
+    font-size: 100px;
+    text-align: center;
+    background: -webkit-linear-gradient(rgb(225, 146, 1), rgb(0, 109, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 100px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 100px;
+}
+
+.box {
+    width: 450px;
+    transition: 1s;
+    margin-left: 10px;
+}
+
+.box:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.para {
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    font-size: 20px;
+}
+
+.subheading {
+    font-size: 70px;
+    text-align: center;
+    background: -webkit-linear-gradient(rgb(0, 109, 0), rgb(225, 146, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 100px;
+}
+
+.vasudha {
+    margin-top: 100px;
+}
+
+.vasudha img {
+    border-radius: 20px;
+}
+
+.samadhi {
+    display: flex;
+    margin-bottom: 200px;
+}
+
+.samadhi img {
+    border-radius: 20px;
+}

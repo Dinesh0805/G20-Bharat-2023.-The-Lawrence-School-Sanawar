@@ -1,0 +1,209 @@
+* {
+    margin-top: -0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(237, 189, 101), rgb(91, 231, 91));
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.navbar {
+    position: fixed;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-width: 0.01px;
+    margin-bottom: 100px;
+    margin-right: 30px;
+}
+
+
+
+.leftnavbar {
+    position: fixed;
+    height: 68px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ml {
+    padding: 12px;
+    line-height: 40px;
+}
+
+.icons {
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-top-style: hidden;
+    border-bottom-style: hidden;
+    border-width: thin;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    border-image: linear-gradient(rgba(91, 231, 91, 0), rgb(255, 255, 255), rgba(91, 231, 91, 0)) 1;
+}
+
+.icons:hover {
+    border-right-style: solid;
+    border-left-style: solid;
+}
+
+.dropbtn {
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-top-style: hidden;
+    border-bottom-style: hidden;
+    border-width: thin;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    border-image: linear-gradient(rgba(91, 231, 91, 0), rgb(255, 255, 255), rgba(91, 231, 91, 0)) 1;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 5;
+    max-height: 300px;
+    overflow: scroll;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.items:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    border-right-style: solid;
+    border-left-style: solid;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    z-index: -5;
+    max-width: 2000px;
+    height: 500px;
+    position: relative;
+    margin: auto;
+    margin-top: 85px;
+    margin-left: 20px;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 1s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+.heading {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    background: -webkit-linear-gradient(rgb(203, 132, 0), green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 50px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.box {
+    width: 450px;
+    transition: 1s;
+}
+
+.box:hover {
+    transform: scale(1.3);
+    z-index: 2;
+}
